@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>  
+
+using namespace std;
+
+int main() {
+	string frase;  
+
+	cout << "Digite uma palavra ou frase: ";
+	getline(cin, frase); 
+
+	int quantidade = frase.length(); 
+
+	cout << "A quantidade de caracteres é " << quantidade << endl;
+
+	return 0;
+}
