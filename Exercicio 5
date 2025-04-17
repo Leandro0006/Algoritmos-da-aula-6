@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>  
+
+using namespace std;
+
+int main() {
+    string str1, str2;  
+
+    cout << "Digite a primeira string: ";
+    getline(cin, str1);  
+
+    cout << "Digite a segunda string: ";
+    getline(cin, str2);  
+
+    if (str1.length() > str2.length()) {
+        cout << "A primeira string é maior.\n";
+    } else if (str1.length() < str2.length()) {
+        cout << "A segunda string é maior.\n";
+    } else {
+        cout << "As duas strings têm o mesmo tamanho.\n";
+    }
+
+    return 0;
+}
