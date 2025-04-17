@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    int quantidade;
+    std::string mensagem = "Teste de String";
+
+    std::cout << "Digite a quantidade de caracteres: ";
+    std::cin >> quantidade;
+
+    if (quantidade <= mensagem.length()) {
+        std::cout << mensagem.substr(0, quantidade) << std::endl;
+    } else {
+        std::string resultado = mensagem;
+        while (resultado.length() < quantidade) {
+            resultado += " ";
+        }
+        std::cout << resultado.substr(0, quantidade) << std::endl;
+    }
+
+    return 0;
+}
